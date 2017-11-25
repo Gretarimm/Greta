@@ -1,0 +1,528 @@
+$acolor:white;
+$ahovercolor:#e6e600;
+$titlecolor:#3f6c45;
+$formcolor:#e4ea8c;
+$border:2px solid $titlecolor;
+$sandcolor:#c29545;
+$max-width:1540px;
+
+body{
+	height:100%;
+	margin: 0px;
+	border:0px;
+	padding-top:60px;
+	background-color:$sandcolor;
+html{
+	font-family:"helvetica neue",sans-serif;
+}
+	
+	#foto{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+	}
+	.bdfoto{
+		height: 100%;
+		width: 100%;
+	}
+	header{
+		position: fixed;
+		width: 100%;
+		height: 1px;
+		box-shadow: 0px 2px 5px black;
+		z-index: 1;
+		nav{
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			z-index: 1;
+			top:0;
+			line-height: 60px;
+			.logo{
+			display: inline-block;
+			width: 160px;
+			height: 56px;
+			z-index: 1;
+			left: 5%;
+			}
+			img{
+				width: 100%;
+				height: 61.5px;
+				z-index: -1;
+				position:fixed;
+			}
+			label{
+			margin: 0 40px 0 0;
+			font-size:26px;
+			line-height: 70px;
+			display: none;
+			width:26px;
+			float: right;
+			color: white;
+			// @media only screen and (max-width:700px){display: block; cursor:pointer;}
+			}
+			#toggle{
+				display: none;
+			}
+			@media only screen and (max-width:700px){
+			#toggle:checked+ ul{display: block;}
+			}
+			ul{
+				margin-left: 17%;
+				width: 64.2%;
+				display: inline-block
+				// @media only screen and (max-width:700px){text-align:center; width:100%;display:none;}
+			}
+			li{
+				display: inline-block;
+				border-right: 1px solid black;
+					a{
+						text-decoration: none;
+						color: $acolor;
+						line-height: 60px;
+						padding: 25px;
+						font-size: 18px;
+						margin: 0 9px;
+						text-align: center;
+						// @media (max-width: 1242px){padding:10px}
+						// @media (max-width: 1040px){margin:0;}
+						// @media (max-width: 880px){margin:0;}
+					}
+					a:hover{
+						color:$formcolor;
+					}
+				}
+			}
+			.usd{
+			width: 10%;
+    		display: inline-block;		
+    		a{
+    			color: $acolor;
+    			text-decoration: none;
+    			padding-left: 4%;
+    			// font-size: 20px;
+    		}
+		}
+		
+	}
+	section#pirma{
+		max-width: $max-width;
+		margin: auto;
+		// background-image: url("../img/90.png");
+		// background-size: cover;
+		.wrapper{
+			// max-width: 1200px;
+			display: block;
+			margin:0 auto;
+			position:relative;
+			#myCarousel{
+				width:100%;
+				position:relative;
+				// height: 300px;
+				margin:auto; 
+				// width: 80%;
+				// border: 100px solid black;
+				// border-top: none;
+				// position: relative;
+				// height: 360px;
+				// margin: auto;
+			 }
+			.carousel-indicators{
+				position:absolute;
+				left: 16%;
+				top:77%;
+				text-align: center;
+				list-style: none;
+			}
+			// .carousel-inner{
+			// 	position:relative;
+			// 	width: 80%;
+			// 	overflow: hidden;
+			// 	margin: auto;
+			// }
+			.carousel-caption{
+				position: absolute;
+				left: 15%;
+				top:0;
+				z-index: 10;
+				color: #fff;
+				text-align: left;
+				text-shadow: 0 1px 2px rgba(0,0,0,.6);
+			}
+			.lentelea{
+				position:initial;
+				z-index: 1;
+				margin-top: -40px;
+				max-width:855px;
+				margin-left: auto;
+				margin-right: auto;
+
+				.pirma{
+					float: left;
+					margin-right: 5px;
+					display: inline-block;
+					background-color: $formcolor;
+					border-bottom: $border;
+					border-left: $border;
+					border-right: $border;
+					text-align: center;
+					border-radius: 20px;
+					opacity: 0.9;
+					.title{
+						text-align: center;
+						font-size: 22px;
+						font-weight: 300;
+						color: white;
+						padding: 15px;
+						background-color:$titlecolor;
+						border-radius: 16px;
+					}
+					@media (max-width: 870px){padding:10px}
+					input{
+						display: block;
+						text-align: center;
+						margin: auto;
+						height: 40px;
+						width: 90%;
+						font-size: 27px;
+						border-radius:9px;
+						border-style: none;
+					}
+					a{
+						display: block;
+						margin: auto;
+						margin-top: 18px;
+						margin-bottom: 18px;
+						width: 90%;
+						border-radius:9px;
+						text-align: center;
+						font-size: 15px;
+						font-weight: bold;
+						color: black;
+						padding:12px;
+						background-color: orange;
+					}
+				}
+				.antra{
+					vertical-align: top;
+					display: inline-block;
+					background-color: $formcolor;
+					border-bottom: $border;
+					border-left: $border;
+					border-right: $border;
+					text-align: center;
+					border-radius: 20px;
+					opacity: 0.9;
+					.title{
+						color: white;
+						padding: 15px;
+						background-color:$titlecolor;
+						border-radius: 16px;
+					}
+					input{
+						display: block;
+						text-align: center;
+						margin: auto;
+						height: 40px;
+						width: 90%;
+						font-size: 27px;
+						border-radius:9px;
+						border-style: none;
+					}
+					a{
+						display: block;
+						margin: auto;
+						margin-bottom: 18px;
+						width: 90%;
+						border-radius:9px;
+						text-align: center;
+						font-size: 15px;
+						font-weight: bold;
+						color: black;
+						padding:11px;
+						background-color: orange;
+					}
+				}
+			}
+		}
+	}
+	section#antra{
+		max-width: $max-width;
+		height: 500px;
+		margin: auto;
+		background-image: url("../img/9b9.jpg");
+		background-size: cover;
+		.sell{
+			color: white;
+			margin-top: 0;
+			text-align: center;
+			padding-top:4%;
+			padding-bottom: 30px;
+			font-size: 45px;
+			font-weight: bold;
+		}
+		.lenteleb{
+			position:initial;
+			z-index: 1;
+			margin-top: -31px;
+			max-width:855px;
+			margin: auto;
+		}
+		.pirma1{
+			float: left;
+			margin-right: 2%;
+			width: 49%;
+			display: inline-block;
+			background-color: $formcolor;
+			border-bottom: $border;
+			border-left: $border;
+			border-right: $border;
+			text-align: center;
+			border-radius: 20px;
+			opacity: 0.9;
+			.title1{
+				text-align: center;
+				font-size: 22px;
+				font-weight: 300;
+				color: white;
+				padding: 15px;
+				background-color:$titlecolor;
+				border-radius: 16px;
+			}
+			.enter{
+				margin-top: 18px;
+				margin-bottom: 18px;
+			}
+			input{
+				display: block;
+				text-align: center;
+				margin: auto;
+				height: 40px;
+				width: 90%;
+				font-size: 27px;
+				border-radius:9px;
+			}
+			a{
+				display: block;
+				margin: auto;
+				margin-top: 18px;
+				margin-bottom: 18px;
+				width: 90%;
+				border-radius:9px;
+				text-align: center;
+				font-size: 15px;
+				font-weight: bold;
+				color: black;
+				padding:12px;
+				background-color: orange;
+			}
+		}
+		.antra1{
+			vertical-align: top;
+			display: inline-block;
+			background-color: $formcolor;
+			border-bottom: $border;
+			border-left: $border;
+			border-right: $border;
+			text-align: center;
+			border-radius: 20px;
+			opacity: 0.9;
+			width: 49%;
+			.title1{
+				color: white;
+				padding: 15px;
+				background-color:$titlecolor;
+				border-radius: 16px;
+			}
+			.enter{
+				margin-top: 18px;
+				margin-bottom: 18px;
+			}
+			input{
+				display: block;
+				text-align: center;
+				margin: auto;
+				height: 40px;
+				width: 90%;
+				font-size: 27px;
+				border-radius:9px;
+			}
+			a.taisomas{
+				display: block;
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: 18px;
+				width: 90%;
+				border-radius:9px;
+				text-align: center;
+				font-size: 15px;
+				font-weight: bold;
+				color: black;
+				padding:11px;
+				background-color: orange;
+			}
+		}
+	}
+	section#trecia{
+		max-width: $max-width;
+		height: 900px;
+		background-attachment: fixed;
+		margin: 0 auto;
+		background-image: url("../img/skyrim.jpg");
+		background-size: cover;
+
+		.wrapper{
+			max-width: 1200px;
+			height: 900px;
+			display: block;
+			margin:0 auto;
+			position:relative;
+			background-color: teal;
+			opacity: 0.6;		}
+		h1{
+			color:white;
+			margin-top: 0;
+			text-align: center;
+			padding-top:4%;
+			padding-bottom: 30px;
+			font-size: 45px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 16px;
+			color:black;
+			margin: 0% 2%;
+			font-weight: bold;
+		}
+		.strong{
+			color: white;
+		}
+	}
+	section#ketvirta{
+		height: 300px;
+		max-width:$max-width;
+		background-image: url("../img/Darkfall_Cave.png");
+		background-size: cover;
+		margin: auto;
+		.wrapper{
+			max-width: 1200px;
+			display: block;
+			margin:0 auto;
+			position:relative;
+		}
+		h1{
+			color:white;
+			margin-top: 0;
+			text-align: center;
+			padding-top:4%;
+			padding-bottom: 30px;
+			font-size: 45px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 16px;
+			color: white;
+			text-align: center;
+		}
+	}
+	section#penkta{
+		max-width: $max-width;
+		height: 1650px;
+		background-image: url("../img/15.jpg");
+		background-size: cover;
+		margin: auto;
+    	background-attachment: fixed;
+		background-repeat: no-repeat;
+
+		.wrapper{
+			max-width: 1200px;
+			height: 1650px;
+			display: block;
+			margin:0 auto;
+			position:relative;
+			background-color: seagreen;
+    		opacity: 0.78;
+		}
+		h1{
+			color:white;
+			margin-top: 0;
+			text-align: center;
+			padding-top:4%;
+			padding-bottom: 30px;
+			font-size: 45px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 16px;
+			margin: 0% 2%;
+			color:black;
+			font-weight: bold;
+		}
+		.strong{
+			color: white;
+		}
+	}
+	#sesta{
+		max-width: $max-width;
+		// background-image: url("../img/footerbg.jpg");
+		// background-size: cover;
+		margin: auto;
+		height: 800px;
+		.wrapper{
+			max-width: 1200px;
+			display: block;
+			margin:0 auto;
+			position:relative;
+
+		}
+		h1{
+			color:white;
+			margin-top: 0;
+			text-align: center;
+			padding-top:4%;
+			padding-bottom: 30px;
+			font-size: 45px;
+			font-weight: bold;
+		}
+		.ppp{
+			background-color: white;
+			opacity: 0.75;
+    		width: 45%;
+    		height: 200px;
+    		margin: auto;		}
+		p{
+			font-size: 20px;
+			padding-top: 5%;
+			color:black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.facebook{
+			margin: auto;
+			width: 40%;
+			margin-top: 4%;
+   		}
+		.p{
+			color: white;
+			font-size: 30px;
+		}
+		.pay-method{
+			margin: auto;
+			width: 80%;
+			margin-top: 2%;
+		}
+
+	}
+	footer{
+		img{
+			width: 100%;
+			height: 80px;
+			z-index: -1;
+			position:absolute;
+			background-repeat:no-repeat;
+		}
+	}
+}	

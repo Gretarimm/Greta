@@ -1,0 +1,563 @@
+/* line 9, ../scss/main.scss */
+body {
+  height: 100%;
+  margin: 0px;
+  border: 0px;
+  padding-top: 60px;
+  background-color: #c29545;
+}
+/* line 15, ../scss/main.scss */
+body html {
+  font-family: "helvetica neue",sans-serif;
+}
+/* line 19, ../scss/main.scss */
+body #foto {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+/* line 27, ../scss/main.scss */
+body .bdfoto {
+  height: 100%;
+  width: 100%;
+}
+/* line 31, ../scss/main.scss */
+body header {
+  position: fixed;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0px 2px 5px black;
+  z-index: 1;
+}
+/* line 37, ../scss/main.scss */
+body header nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  top: 0;
+  line-height: 60px;
+}
+/* line 44, ../scss/main.scss */
+body header nav .logo {
+  display: inline-block;
+  width: 160px;
+  height: 56px;
+  z-index: 1;
+  left: 5%;
+}
+/* line 51, ../scss/main.scss */
+body header nav img {
+  width: 100%;
+  height: 61.5px;
+  z-index: -1;
+  position: fixed;
+}
+/* line 57, ../scss/main.scss */
+body header nav label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+/* line 67, ../scss/main.scss */
+body header nav #toggle {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  /* line 71, ../scss/main.scss */
+  body header nav #toggle:checked + ul {
+    display: block;
+  }
+}
+/* line 73, ../scss/main.scss */
+body header nav ul {
+  margin-left: 17%;
+  width: 64.2%;
+  display: inline-block;
+}
+/* line 79, ../scss/main.scss */
+body header nav li {
+  display: inline-block;
+  border-right: 1px solid black;
+}
+/* line 82, ../scss/main.scss */
+body header nav li a {
+  text-decoration: none;
+  color: white;
+  line-height: 60px;
+  padding: 25px;
+  font-size: 18px;
+  margin: 0 9px;
+  text-align: center;
+}
+/* line 94, ../scss/main.scss */
+body header nav li a:hover {
+  color: #e4ea8c;
+}
+/* line 99, ../scss/main.scss */
+body header .usd {
+  width: 10%;
+  display: inline-block;
+}
+/* line 102, ../scss/main.scss */
+body header .usd a {
+  color: white;
+  text-decoration: none;
+  padding-left: 4%;
+}
+/* line 111, ../scss/main.scss */
+body section#pirma {
+  max-width: 1540px;
+  margin: auto;
+}
+/* line 116, ../scss/main.scss */
+body section#pirma .wrapper {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 121, ../scss/main.scss */
+body section#pirma .wrapper #myCarousel {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+/* line 133, ../scss/main.scss */
+body section#pirma .wrapper .carousel-indicators {
+  position: absolute;
+  left: 16%;
+  top: 77%;
+  text-align: center;
+  list-style: none;
+}
+/* line 146, ../scss/main.scss */
+body section#pirma .wrapper .carousel-caption {
+  position: absolute;
+  left: 15%;
+  top: 0;
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* line 155, ../scss/main.scss */
+body section#pirma .wrapper .lentelea {
+  position: initial;
+  z-index: 1;
+  margin-top: -40px;
+  max-width: 855px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 163, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .pirma {
+  float: left;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: #e4ea8c;
+  border-bottom: 2px solid #3f6c45;
+  border-left: 2px solid #3f6c45;
+  border-right: 2px solid #3f6c45;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+/* line 174, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .pirma .title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  padding: 15px;
+  background-color: #3f6c45;
+  border-radius: 16px;
+}
+@media (max-width: 870px) {
+  /* line 163, ../scss/main.scss */
+  body section#pirma .wrapper .lentelea .pirma {
+    padding: 10px;
+  }
+}
+/* line 184, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .pirma input {
+  display: block;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+  width: 90%;
+  font-size: 27px;
+  border-radius: 9px;
+  border-style: none;
+}
+/* line 194, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .pirma a {
+  display: block;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  width: 90%;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  padding: 12px;
+  background-color: orange;
+}
+/* line 209, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .antra {
+  vertical-align: top;
+  display: inline-block;
+  background-color: #e4ea8c;
+  border-bottom: 2px solid #3f6c45;
+  border-left: 2px solid #3f6c45;
+  border-right: 2px solid #3f6c45;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+/* line 219, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .antra .title {
+  color: white;
+  padding: 15px;
+  background-color: #3f6c45;
+  border-radius: 16px;
+}
+/* line 225, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .antra input {
+  display: block;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+  width: 90%;
+  font-size: 27px;
+  border-radius: 9px;
+  border-style: none;
+}
+/* line 235, ../scss/main.scss */
+body section#pirma .wrapper .lentelea .antra a {
+  display: block;
+  margin: auto;
+  margin-bottom: 18px;
+  width: 90%;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  padding: 11px;
+  background-color: orange;
+}
+/* line 252, ../scss/main.scss */
+body section#antra {
+  max-width: 1540px;
+  height: 500px;
+  margin: auto;
+  background-image: url("../img/9b9.jpg");
+  background-size: cover;
+}
+/* line 258, ../scss/main.scss */
+body section#antra .sell {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+/* line 267, ../scss/main.scss */
+body section#antra .lenteleb {
+  position: initial;
+  z-index: 1;
+  margin-top: -31px;
+  max-width: 855px;
+  margin: auto;
+}
+/* line 274, ../scss/main.scss */
+body section#antra .pirma1 {
+  float: left;
+  margin-right: 2%;
+  width: 49%;
+  display: inline-block;
+  background-color: #e4ea8c;
+  border-bottom: 2px solid #3f6c45;
+  border-left: 2px solid #3f6c45;
+  border-right: 2px solid #3f6c45;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+/* line 286, ../scss/main.scss */
+body section#antra .pirma1 .title1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  padding: 15px;
+  background-color: #3f6c45;
+  border-radius: 16px;
+}
+/* line 295, ../scss/main.scss */
+body section#antra .pirma1 .enter {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+/* line 299, ../scss/main.scss */
+body section#antra .pirma1 input {
+  display: block;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+  width: 90%;
+  font-size: 27px;
+  border-radius: 9px;
+}
+/* line 308, ../scss/main.scss */
+body section#antra .pirma1 a {
+  display: block;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  width: 90%;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  padding: 12px;
+  background-color: orange;
+}
+/* line 323, ../scss/main.scss */
+body section#antra .antra1 {
+  vertical-align: top;
+  display: inline-block;
+  background-color: #e4ea8c;
+  border-bottom: 2px solid #3f6c45;
+  border-left: 2px solid #3f6c45;
+  border-right: 2px solid #3f6c45;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.9;
+  width: 49%;
+}
+/* line 334, ../scss/main.scss */
+body section#antra .antra1 .title1 {
+  color: white;
+  padding: 15px;
+  background-color: #3f6c45;
+  border-radius: 16px;
+}
+/* line 340, ../scss/main.scss */
+body section#antra .antra1 .enter {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+/* line 344, ../scss/main.scss */
+body section#antra .antra1 input {
+  display: block;
+  text-align: center;
+  margin: auto;
+  height: 40px;
+  width: 90%;
+  font-size: 27px;
+  border-radius: 9px;
+}
+/* line 353, ../scss/main.scss */
+body section#antra .antra1 a.taisomas {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  width: 90%;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  padding: 11px;
+  background-color: orange;
+}
+/* line 369, ../scss/main.scss */
+body section#trecia {
+  max-width: 1540px;
+  height: 900px;
+  background-attachment: fixed;
+  margin: 0 auto;
+  background-image: url("../img/skyrim.jpg");
+  background-size: cover;
+}
+/* line 377, ../scss/main.scss */
+body section#trecia .wrapper {
+  max-width: 1200px;
+  height: 900px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background-color: teal;
+  opacity: 0.6;
+}
+/* line 385, ../scss/main.scss */
+body section#trecia h1 {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+/* line 394, ../scss/main.scss */
+body section#trecia p {
+  font-size: 16px;
+  color: black;
+  margin: 0% 2%;
+  font-weight: bold;
+}
+/* line 400, ../scss/main.scss */
+body section#trecia .strong {
+  color: white;
+}
+/* line 404, ../scss/main.scss */
+body section#ketvirta {
+  height: 300px;
+  max-width: 1540px;
+  background-image: url("../img/Darkfall_Cave.png");
+  background-size: cover;
+  margin: auto;
+}
+/* line 410, ../scss/main.scss */
+body section#ketvirta .wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 416, ../scss/main.scss */
+body section#ketvirta h1 {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+/* line 425, ../scss/main.scss */
+body section#ketvirta p {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+/* line 431, ../scss/main.scss */
+body section#penkta {
+  max-width: 1540px;
+  height: 1650px;
+  background-image: url("../img/15.jpg");
+  background-size: cover;
+  margin: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* line 440, ../scss/main.scss */
+body section#penkta .wrapper {
+  max-width: 1200px;
+  height: 1650px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background-color: seagreen;
+  opacity: 0.78;
+}
+/* line 449, ../scss/main.scss */
+body section#penkta h1 {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+/* line 458, ../scss/main.scss */
+body section#penkta p {
+  font-size: 16px;
+  margin: 0% 2%;
+  color: black;
+  font-weight: bold;
+}
+/* line 464, ../scss/main.scss */
+body section#penkta .strong {
+  color: white;
+}
+/* line 468, ../scss/main.scss */
+body #sesta {
+  max-width: 1540px;
+  margin: auto;
+  height: 800px;
+}
+/* line 474, ../scss/main.scss */
+body #sesta .wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 481, ../scss/main.scss */
+body #sesta h1 {
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+/* line 490, ../scss/main.scss */
+body #sesta .ppp {
+  background-color: white;
+  opacity: 0.75;
+  width: 45%;
+  height: 200px;
+  margin: auto;
+}
+/* line 496, ../scss/main.scss */
+body #sesta p {
+  font-size: 20px;
+  padding-top: 5%;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 503, ../scss/main.scss */
+body #sesta .facebook {
+  margin: auto;
+  width: 40%;
+  margin-top: 4%;
+}
+/* line 508, ../scss/main.scss */
+body #sesta .p {
+  color: white;
+  font-size: 30px;
+}
+/* line 512, ../scss/main.scss */
+body #sesta .pay-method {
+  margin: auto;
+  width: 80%;
+  margin-top: 2%;
+}
+/* line 520, ../scss/main.scss */
+body footer img {
+  width: 100%;
+  height: 80px;
+  z-index: -1;
+  position: absolute;
+  background-repeat: no-repeat;
+}
