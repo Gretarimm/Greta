@@ -35,18 +35,20 @@ html{
 		box-shadow: 0px 2px 5px black;
 		z-index: 1;
 		nav{
-			position: fixed;
+			// position: fixed; 
 			width: 100%;
+			margin-top: -60px;
 			height: 60px;
-			z-index: 1;
-			top:0;
+			top: 0;
+			bottom: 0;
 			line-height: 60px;
 			.logo{
 			display: inline-block;
-			width: 160px;
-			height: 56px;
-			z-index: 1;
-			left: 5%;
+		    width: 200px;
+		    margin-top: 2.5px;
+		    height: 80px;
+		    z-index: 1;
+		    left: 5%;
 			}
 			img{
 				width: 100%;
@@ -96,23 +98,34 @@ html{
 					}
 				}
 			}
-			.usd{
-			width: 10%;
-    		display: inline-block;		
+			// .usd{
+			// width: 10%;
+   //  		display: inline-block;		
+   //  		a{
+   //  			color: $acolor;
+   //  			text-decoration: none;
+   //  			padding-left: 4%;
+   //  			// font-size: 20px;
+   //  		}
+		}
+		.usd{
+			width: 18%;
+    		float: right;
+    		margin-top: -20px;		
     		a{
     			color: $acolor;
     			text-decoration: none;
     			padding-left: 4%;
-    			// font-size: 20px;
+    			font-size: 15px;
     		}
-		}
+    		a:hover{
+				color:$formcolor;
+			}
 		
 	}
 	section#pirma{
 		max-width: $max-width;
 		margin: auto;
-		// background-image: url("../img/90.png");
-		// background-size: cover;
 		.wrapper{
 			// max-width: 1200px;
 			display: block;
@@ -121,15 +134,8 @@ html{
 			#myCarousel{
 				width:100%;
 				position:relative;
-				// height: 300px;
 				margin:auto; 
-				// width: 80%;
-				// border: 100px solid black;
-				// border-top: none;
-				// position: relative;
-				// height: 360px;
-				// margin: auto;
-			 }
+			}
 			.carousel-indicators{
 				position:absolute;
 				left: 16%;
